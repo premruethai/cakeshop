@@ -13,6 +13,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HttpModule } from '@angular/http';
 import { DetailPage } from '../pages/detail/detail';
+import { ResultPage } from '../pages/result/result';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { DetailPage } from '../pages/detail/detail';
     ContactPage,
     HomePage,
     DetailPage,
+    ResultPage,
     TabsPage
   ],
   imports: [
@@ -34,6 +36,7 @@ import { DetailPage } from '../pages/detail/detail';
     AboutPage,
     ContactPage,
     HomePage,
+    ResultPage,
     DetailPage,
     TabsPage
   ],
