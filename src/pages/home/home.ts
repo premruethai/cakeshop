@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { DetailPage } from '../detail/detail'
 
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
@@ -16,6 +17,12 @@ export class HomePage {
       .subscribe(data=>{
         this.customer=data;
       });
+
+      
+  }
+  showDetail(id){
+       this.navCtrl.push(DetailPage,{ID_customer : id});
+
   }
 
 }
